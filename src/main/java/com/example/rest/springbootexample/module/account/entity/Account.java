@@ -1,16 +1,16 @@
 package com.example.rest.springbootexample.module.account.entity;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 /**
  * Created by rdabrowski on 07.06.2017.
  */
+@Data
 public class Account {
 
-   private @Setter @Getter Long id;
-   private @Setter @Getter String firstName;
-   private @Setter @Getter String lastName;
-   private @Setter @Getter Integer age;
+   private Long id;
+   private String firstName;
+   private String lastName;
+   private Integer age;
 
 }
