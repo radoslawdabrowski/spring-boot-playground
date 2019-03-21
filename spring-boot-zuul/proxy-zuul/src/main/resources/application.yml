@@ -7,7 +7,7 @@ zuul:
       path: /first/**
       url: http://localhost:9090/persons/get/1
 server:
-  port: 9080
+  port: 9091
 ribbon:
   eureka:
     enabled: false
