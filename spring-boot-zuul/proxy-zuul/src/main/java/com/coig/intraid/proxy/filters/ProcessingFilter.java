@@ -3,14 +3,11 @@ package com.coig.intraid.proxy.filters;
 import com.netflix.zuul.ZuulFilter;
 import javax.servlet.http.HttpServletRequest;
 import com.netflix.zuul.context.RequestContext;
-import com.netflix.zuul.ZuulFilter;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class ProcessingFilter extends ZuulFilter {
-
-    private static Logger log = LoggerFactory.getLogger(ProcessingFilter.class);
 
     @Override
     public String filterType() {
