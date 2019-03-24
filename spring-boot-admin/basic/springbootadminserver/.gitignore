@@ -1,0 +1,9 @@
+.idea
+*.class
+*.iml
+*.bin
+*.lock
+
+/build
+/buildOutputCleanup
+/out

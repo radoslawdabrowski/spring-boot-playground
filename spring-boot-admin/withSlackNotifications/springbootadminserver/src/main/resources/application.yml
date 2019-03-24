@@ -1,0 +1,9 @@
+server:
+    port: 9999
+
+spring:
+  boot:
+    admin:
+      notify:
+        slack:
+          webhook-url: https://hooks.slack.com/services/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

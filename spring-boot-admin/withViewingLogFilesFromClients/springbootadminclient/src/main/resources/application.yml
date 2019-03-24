@@ -1,0 +1,13 @@
+spring:
+  boot:
+    admin:
+      url: http://localhost:9999
+management:
+  security:
+    enabled: false
+
+logging:
+  pattern:
+    console: "[%thread] %highlight(%-5level) %cyan(%logger{15}) - %msg %n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: client.log

@@ -1,0 +1,9 @@
+spring:
+  boot:
+    admin:
+      url: http://localhost:9999
+      username: user
+      password: password
+management:
+  security:
+    enabled: false
