@@ -1,0 +1,26 @@
+server:
+  port: ${PORT:8761}
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+  server:
+    enable-self-preservation: false
+
+zuul:
+  routes:
+    account:
+      path: /account/**
+      serviceId: account-service
+#      url: http://localhost:9700/
+    auth:
+      path: /auth/**
+      serviceId: auth-service
+#      url: http://localhost:9701/
+    i18n:
+      path: /i18n/**
+      serviceId: i18n-service
+
+
